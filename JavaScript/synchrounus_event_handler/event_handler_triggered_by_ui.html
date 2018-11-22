@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Synchrounus event handler</title>
+  </head>
+
+  <body>
+    <button id="button">Click to trigger event</button>
+
+    <script>
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
+        console.log("button clicked");
+      });
+      console.log("about to finish main script...");
+    </script>
+  </body>
+</html>

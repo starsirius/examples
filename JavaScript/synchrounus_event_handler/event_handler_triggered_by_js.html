@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Synchrounus event handler</title>
+  </head>
+
+  <body>
+    <button id="button">Don't click me but trigger event by Javascript</button>
+
+    <script>
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
+        console.log("button clicked");
+      });
+      button.click(); // This is synchrounus and will return after event handler is executed.
+      console.log("about to finish main script...");
+    </script>
+  </body>
+</html>
